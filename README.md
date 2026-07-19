@@ -3471,4 +3471,4 @@ FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 ```
 
-Full text also lives in the [LICENSE](LICENSE) file at the root of the repo.
+
