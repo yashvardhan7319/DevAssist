@@ -521,16 +521,13 @@ The following diagram illustrates the major components of DevAssist and how they
 
 ```mermaid
 flowchart LR
-
 User([Developer])
-
 subgraph Frontend
 UI[React Dashboard]
 Explorer[Repository Explorer]
 Chat[AI Repository Chat]
 Analytics[Analytics Dashboard]
 end
-
 subgraph Backend
 API[Express API]
 Auth[Authentication]
@@ -538,10 +535,8 @@ RepoService[Repository Service]
 SearchService[Search Service]
 AIService[AI Service]
 end
-
 subgraph AI
 Orchestrator[LangGraph Orchestrator]
-
 ArchAgent[Architecture Agent]
 DocAgent[Documentation Agent]
 ReadmeAgent[README Agent]
@@ -549,53 +544,39 @@ ReviewAgent[Code Review Agent]
 SecurityAgent[Security Agent]
 SearchAgent[Semantic Search Agent]
 end
-
 subgraph Data
 SQLite[(SQLite)]
 VectorDB[(Vector Store)]
 Embeddings[(Embeddings)]
 end
-
 subgraph External
 GitHub[GitHub API]
 Groq[Groq LLM]
 end
-
 User --> UI
-
 UI --> API
-
 API --> Auth
 API --> RepoService
 API --> SearchService
 API --> AIService
-
 RepoService --> GitHub
-
 RepoService --> SQLite
-
 SearchService --> VectorDB
-
 AIService --> Orchestrator
-
 Orchestrator --> ArchAgent
 Orchestrator --> DocAgent
 Orchestrator --> ReadmeAgent
 Orchestrator --> ReviewAgent
 Orchestrator --> SecurityAgent
 Orchestrator --> SearchAgent
-
 ArchAgent --> Groq
 DocAgent --> Groq
 ReadmeAgent --> Groq
 ReviewAgent --> Groq
 SecurityAgent --> Groq
 SearchAgent --> Groq
-
 VectorDB --> Embeddings
-
 SQLite --> API
-
 VectorDB --> AIService
 ```
 
@@ -623,51 +604,38 @@ The application follows a layered architecture to separate concerns and improve 
 
 ```mermaid
 flowchart TD
-
 Presentation["Presentation Layer
 React
 TypeScript
 Tailwind CSS"]
-
 API["API Layer
 Express
 REST API
 JWT"]
-
 Service["Service Layer
 Repository Services
 AI Services
 Search Services"]
-
 AI["AI Layer
 LangGraph
 LLMs
 Agents"]
-
 Knowledge["Knowledge Layer
 Embeddings
 Vector Database
 Retriever"]
-
 Database["Data Layer
 SQLite
 Repository Metadata"]
-
 Infrastructure["Infrastructure
 GitHub
 Groq
 Environment"]
-
 Presentation --> API
-
 API --> Service
-
 Service --> AI
-
 AI --> Knowledge
-
 Knowledge --> Database
-
 AI --> Infrastructure
 ```
 
@@ -852,55 +820,30 @@ The following diagram illustrates the complete lifecycle of a repository from im
 
 ```mermaid
 flowchart LR
-
 User([Developer])
-
 GitHub[(GitHub Repository)]
-
 Import[Import Repository]
-
 Clone[Clone Repository]
-
 Parse[Parse Files]
-
 Chunk[Chunk Source Code]
-
 Embed[Generate Embeddings]
-
 Vector[(Vector Database)]
-
 Index[Index Metadata]
-
 LangGraph[LangGraph Orchestrator]
-
 Agents[AI Agents]
-
 Dashboard[Dashboard]
-
 User --> Import
-
 GitHub --> Import
-
 Import --> Clone
-
 Clone --> Parse
-
 Parse --> Chunk
-
 Chunk --> Embed
-
 Embed --> Vector
-
 Parse --> Index
-
 Vector --> LangGraph
-
 Index --> LangGraph
-
 LangGraph --> Agents
-
 Agents --> Dashboard
-
 Dashboard --> User
 ```
 
@@ -912,35 +855,20 @@ DevAssist supports importing repositories from GitHub using Personal Access Toke
 
 ```mermaid
 sequenceDiagram
-
 actor User
-
 participant UI as Dashboard
-
 participant API
-
 participant GitHub
-
 participant DB
-
 User->>UI: Import Repository
-
 UI->>API: POST /repositories
-
 API->>GitHub: Validate Repository
-
 GitHub-->>API: Repository Metadata
-
 API->>GitHub: Clone Repository
-
 GitHub-->>API: Repository Files
-
 API->>DB: Save Metadata
-
 DB-->>API: Success
-
 API-->>UI: Repository Imported
-
 UI-->>User: Display Repository
 ```
 
@@ -952,44 +880,7 @@ Once imported, the repository moves through several processing stages before bec
 
 ```mermaid
 flowchart LR
-
-Repository
-
--->
-
-Clone
-
--->
-
-FileDiscovery
-
--->
-
-LanguageDetection
-
--->
-
-ASTParsing
-
--->
-
-DependencyAnalysis
-
--->
-
-Chunking
-
--->
-
-EmbeddingGeneration
-
--->
-
-VectorStorage
-
--->
-
-RepositoryReady
+Repository --> Clone --> FileDiscovery --> LanguageDetection --> ASTParsing --> DependencyAnalysis --> Chunking --> EmbeddingGeneration --> VectorStorage --> RepositoryReady
 ```
 
 ---
@@ -1000,44 +891,7 @@ Every source file is analyzed independently.
 
 ```mermaid
 flowchart TD
-
-Repository
-
--->
-
-ReadFiles
-
--->
-
-IdentifyLanguage
-
--->
-
-ExtractMetadata
-
--->
-
-ParseSyntax
-
--->
-
-ExtractImports
-
--->
-
-ExtractFunctions
-
--->
-
-ExtractClasses
-
--->
-
-ExtractComments
-
--->
-
-StructuredDocument
+Repository --> ReadFiles --> IdentifyLanguage --> ExtractMetadata --> ParseSyntax --> ExtractImports --> ExtractFunctions --> ExtractClasses --> ExtractComments --> StructuredDocument
 ```
 
 ---
@@ -1048,32 +902,7 @@ Large files are split into semantically meaningful chunks.
 
 ```mermaid
 flowchart LR
-
-SourceFile
-
--->
-
-Tokenizer
-
--->
-
-SmartChunker
-
--->
-
-OverlapHandler
-
--->
-
-ChunkValidation
-
--->
-
-ChunkMetadata
-
--->
-
-EmbeddingQueue
+SourceFile --> Tokenizer --> SmartChunker --> OverlapHandler --> ChunkValidation --> ChunkMetadata --> EmbeddingQueue
 ```
 
 ---
@@ -1084,28 +913,7 @@ Each chunk is transformed into a vector representation for semantic retrieval.
 
 ```mermaid
 flowchart LR
-
-Chunk
-
--->
-
-EmbeddingModel
-
--->
-
-VectorGeneration
-
--->
-
-MetadataAttachment
-
--->
-
-VectorDatabase
-
--->
-
-SimilarityIndex
+Chunk --> EmbeddingModel --> VectorGeneration --> MetadataAttachment --> VectorDatabase --> SimilarityIndex
 ```
 
 ---
@@ -1116,35 +924,10 @@ Repository metadata and embeddings are indexed separately for efficient retrieva
 
 ```mermaid
 flowchart TD
-
-Repository
-
--->
-
-Metadata
-
--->
-
-SQLite
-
-Repository
-
--->
-
-Chunks
-
--->
-
-Embeddings
-
--->
-
-VectorDB
-
+Repository --> Metadata --> SQLite
+Repository --> Chunks --> Embeddings --> VectorDB
 SQLite --> SearchEngine
-
 VectorDB --> SearchEngine
-
 SearchEngine --> RepositoryKnowledgeBase
 ```
 
@@ -1156,36 +939,7 @@ Every AI response is grounded in repository context using Retrieval-Augmented Ge
 
 ```mermaid
 flowchart LR
-
-Question
-
--->
-
-Embedding
-
--->
-
-VectorSearch
-
--->
-
-TopKChunks
-
--->
-
-ContextBuilder
-
--->
-
-PromptBuilder
-
--->
-
-GroqLLM
-
--->
-
-FinalAnswer
+Question --> Embedding --> VectorSearch --> TopKChunks --> ContextBuilder --> PromptBuilder --> GroqLLM --> FinalAnswer
 ```
 
 ---
@@ -1196,31 +950,18 @@ Natural language questions are answered using repository-specific knowledge.
 
 ```mermaid
 sequenceDiagram
-
 actor User
-
 participant Chat
-
 participant API
-
 participant Retriever
-
 participant Groq
-
 User->>Chat: Ask Question
-
 Chat->>API: Query
-
 API->>Retriever: Semantic Search
-
 Retriever-->>API: Relevant Chunks
-
 API->>Groq: Context + Question
-
 Groq-->>API: AI Response
-
 API-->>Chat: Answer
-
 Chat-->>User: Display Response
 ```
 
@@ -1232,32 +973,7 @@ Unlike keyword search, DevAssist searches by meaning.
 
 ```mermaid
 flowchart LR
-
-UserQuery
-
--->
-
-Embedding
-
--->
-
-VectorSearch
-
--->
-
-SimilarityRanking
-
--->
-
-ContextRetrieval
-
--->
-
-LLMReasoning
-
--->
-
-SearchResults
+UserQuery --> Embedding --> VectorSearch --> SimilarityRanking --> ContextRetrieval --> LLMReasoning --> SearchResults
 ```
 
 ---
@@ -1315,45 +1031,25 @@ The LangGraph Orchestrator serves as the central brain of the platform. It coord
 
 ```mermaid
 flowchart TD
-
 Start([Repository Ready])
-
 Start --> Planner
-
 Planner[LangGraph Orchestrator]
-
 Planner --> Documentation
-
 Planner --> Readme
-
 Planner --> Architecture
-
 Planner --> Review
-
 Planner --> Security
-
 Planner --> Dependency
-
 Planner --> Analytics
-
 Documentation --> Merge
-
 Readme --> Merge
-
 Architecture --> Merge
-
 Review --> Merge
-
 Security --> Merge
-
 Dependency --> Merge
-
 Analytics --> Merge
-
 Merge[Result Aggregator]
-
 Merge --> Dashboard
-
 Dashboard --> User
 ```
 
@@ -1381,41 +1077,21 @@ The repository is analyzed in parallel by independent AI agents.
 
 ```mermaid
 flowchart LR
-
-Repository
-
--->
-
-LangGraph
-
+Repository --> LangGraph
 LangGraph --> Documentation
-
 LangGraph --> Review
-
 LangGraph --> Security
-
 LangGraph --> Architecture
-
 LangGraph --> Readme
-
 LangGraph --> Search
-
 LangGraph --> Analytics
-
 Documentation --> Response
-
 Review --> Response
-
 Security --> Response
-
 Architecture --> Response
-
 Readme --> Response
-
 Search --> Response
-
 Analytics --> Response
-
 Response --> Dashboard
 ```
 
@@ -1427,32 +1103,7 @@ The Documentation Agent automatically creates project documentation by analyzing
 
 ```mermaid
 flowchart TD
-
-Repository
-
--->
-
-ParseSource
-
--->
-
-ExtractMetadata
-
--->
-
-IdentifyModules
-
--->
-
-SummarizeFiles
-
--->
-
-GenerateMarkdown
-
--->
-
-Documentation
+Repository --> ParseSource --> ExtractMetadata --> IdentifyModules --> SummarizeFiles --> GenerateMarkdown --> Documentation
 ```
 
 ---
@@ -1463,32 +1114,7 @@ The README Agent generates a complete README.md using repository metadata and AI
 
 ```mermaid
 flowchart LR
-
-Repository
-
--->
-
-Metadata
-
--->
-
-ProjectAnalysis
-
--->
-
-FeatureExtraction
-
--->
-
-ArchitectureSummary
-
--->
-
-MarkdownGeneration
-
--->
-
-README
+Repository --> Metadata --> ProjectAnalysis --> FeatureExtraction --> ArchitectureSummary --> MarkdownGeneration --> README
 ```
 
 ---
@@ -1499,28 +1125,7 @@ The Architecture Agent identifies relationships between modules and generates vi
 
 ```mermaid
 flowchart TD
-
-Repository
-
--->
-
-DependencyGraph
-
--->
-
-ModuleAnalysis
-
--->
-
-RelationshipDetection
-
--->
-
-MermaidGenerator
-
--->
-
-ArchitectureDiagram
+Repository --> DependencyGraph --> ModuleAnalysis --> RelationshipDetection --> MermaidGenerator --> ArchitectureDiagram
 ```
 
 ---
@@ -1531,32 +1136,7 @@ The Code Review Agent evaluates code quality, maintainability, complexity, and b
 
 ```mermaid
 flowchart LR
-
-SourceCode
-
--->
-
-StaticAnalysis
-
--->
-
-CodeQuality
-
--->
-
-BestPractices
-
--->
-
-BugDetection
-
--->
-
-Suggestions
-
--->
-
-ReviewReport
+SourceCode --> StaticAnalysis --> CodeQuality --> BestPractices --> BugDetection --> Suggestions --> ReviewReport
 ```
 
 ---
@@ -1567,32 +1147,7 @@ The Security Agent scans repositories for vulnerabilities, insecure dependencies
 
 ```mermaid
 flowchart TD
-
-Repository
-
--->
-
-DependencyScan
-
--->
-
-SecretDetection
-
--->
-
-StaticSecurityAnalysis
-
--->
-
-OWASPChecks
-
--->
-
-RiskAssessment
-
--->
-
-SecurityReport
+Repository --> DependencyScan --> SecretDetection --> StaticSecurityAnalysis --> OWASPChecks --> RiskAssessment --> SecurityReport
 ```
 
 ---
@@ -1603,28 +1158,7 @@ The Dependency Agent constructs an internal dependency graph for better reposito
 
 ```mermaid
 flowchart LR
-
-Repository
-
--->
-
-ImportDetection
-
--->
-
-PackageAnalysis
-
--->
-
-DependencyTree
-
--->
-
-CircularDependencyCheck
-
--->
-
-DependencyGraph
+Repository --> ImportDetection --> PackageAnalysis --> DependencyTree --> CircularDependencyCheck --> DependencyGraph
 ```
 
 ---
@@ -1635,32 +1169,7 @@ The Analytics Agent produces engineering insights about the repository.
 
 ```mermaid
 flowchart TD
-
-Repository
-
--->
-
-CollectMetrics
-
--->
-
-LOCAnalysis
-
--->
-
-ComplexityAnalysis
-
--->
-
-LanguageStatistics
-
--->
-
-RepositoryHealth
-
--->
-
-DashboardMetrics
+Repository --> CollectMetrics --> LOCAnalysis --> ComplexityAnalysis --> LanguageStatistics --> RepositoryHealth --> DashboardMetrics
 ```
 
 ---
@@ -1671,56 +1180,13 @@ After every AI agent completes its task, LangGraph merges all outputs into a sin
 
 ```mermaid
 flowchart LR
-
-Documentation
-
--->
-
-Aggregator
-
-Architecture
-
--->
-
-Aggregator
-
-Review
-
--->
-
-Aggregator
-
-Security
-
--->
-
-Aggregator
-
-Analytics
-
--->
-
-Aggregator
-
-Search
-
--->
-
-Aggregator
-
-Aggregator
-
--->
-
-PromptBuilder
-
--->
-
-GroqLLM
-
--->
-
-FinalResponse
+Documentation --> Aggregator
+Architecture --> Aggregator
+Review --> Aggregator
+Security --> Aggregator
+Analytics --> Aggregator
+Search --> Aggregator
+Aggregator --> PromptBuilder --> GroqLLM --> FinalResponse
 ```
 
 ---
@@ -1731,47 +1197,16 @@ Agents communicate through shared repository state managed by LangGraph.
 
 ```mermaid
 flowchart TD
-
-RepositoryState
-
--->
-
-DocumentationAgent
-
-RepositoryState
-
--->
-
-ReviewAgent
-
-RepositoryState
-
--->
-
-ArchitectureAgent
-
-RepositoryState
-
--->
-
-SecurityAgent
-
-RepositoryState
-
--->
-
-AnalyticsAgent
-
+RepositoryState --> DocumentationAgent
+RepositoryState --> ReviewAgent
+RepositoryState --> ArchitectureAgent
+RepositoryState --> SecurityAgent
+RepositoryState --> AnalyticsAgent
 DocumentationAgent --> SharedState
-
 ReviewAgent --> SharedState
-
 ArchitectureAgent --> SharedState
-
 SecurityAgent --> SharedState
-
 AnalyticsAgent --> SharedState
-
 SharedState --> FinalResponse
 ```
 
@@ -1783,39 +1218,20 @@ Independent AI agents execute simultaneously, reducing repository processing tim
 
 ```mermaid
 flowchart LR
-
-Repository
-
--->
-
-LangGraph
-
+Repository --> LangGraph
 LangGraph --> Agent1
-
 LangGraph --> Agent2
-
 LangGraph --> Agent3
-
 LangGraph --> Agent4
-
 LangGraph --> Agent5
-
 LangGraph --> Agent6
-
 LangGraph --> Agent7
-
 Agent1 --> Finish
-
 Agent2 --> Finish
-
 Agent3 --> Finish
-
 Agent4 --> Finish
-
 Agent5 --> Finish
-
 Agent6 --> Finish
-
 Agent7 --> Finish
 ```
 
@@ -1872,107 +1288,56 @@ DevAssist separates structured metadata from semantic knowledge. Repository meta
 
 ```mermaid
 erDiagram
-
 USER ||--o{ REPOSITORY : owns
-
 REPOSITORY ||--o{ FILE : contains
-
 REPOSITORY ||--o{ CHAT : has
-
 REPOSITORY ||--o{ AGENT_TASK : executes
-
 REPOSITORY ||--o{ ANALYTICS : generates
-
 FILE ||--o{ EMBEDDING : indexed_as
-
 CHAT ||--o{ MESSAGE : contains
-
 USER {
-
 int id
-
 string name
-
 string email
-
 string password
-
 datetime createdAt
-
 }
-
 REPOSITORY {
-
 int id
-
 string githubUrl
-
 string branch
-
 string status
-
 datetime importedAt
-
 }
-
 FILE {
-
 int id
-
 string path
-
 string language
-
 int repositoryId
-
 }
-
 EMBEDDING {
-
 int id
-
 string chunkId
-
 vector embedding
-
 }
-
 CHAT {
-
 int id
-
 int repositoryId
-
 }
-
 MESSAGE {
-
 int id
-
 string role
-
 text content
-
 }
-
 AGENT_TASK {
-
 int id
-
 string agent
-
 string status
-
 }
-
 ANALYTICS {
-
 int id
-
 string metric
-
 string value
-
 }
 ```
 
@@ -1999,31 +1364,16 @@ The frontend communicates exclusively through the Express REST API.
 
 ```mermaid
 flowchart LR
-
-Browser
-
--->
-
-ExpressAPI
-
+Browser --> ExpressAPI
 ExpressAPI --> Authentication
-
 ExpressAPI --> RepositoryService
-
 ExpressAPI --> AIService
-
 ExpressAPI --> SearchService
-
 ExpressAPI --> AnalyticsService
-
 RepositoryService --> SQLite
-
 SearchService --> VectorDB
-
 AIService --> LangGraph
-
 LangGraph --> Groq
-
 AnalyticsService --> SQLite
 ```
 
@@ -2033,37 +1383,21 @@ AnalyticsService --> SQLite
 
 ```mermaid
 sequenceDiagram
-
 actor User
-
 participant React
-
 participant API
-
 participant Auth
-
 participant Service
-
 participant Database
-
 User->>React: Click Action
-
 React->>API: HTTP Request
-
 API->>Auth: Validate JWT
-
 Auth-->>API: Authorized
-
 API->>Service: Execute Request
-
 Service->>Database: Query Data
-
 Database-->>Service: Result
-
 Service-->>API: Response
-
 API-->>React: JSON
-
 React-->>User: Update UI
 ```
 
@@ -2075,31 +1409,18 @@ DevAssist secures every API request using JWT-based authentication.
 
 ```mermaid
 sequenceDiagram
-
 actor User
-
 participant Frontend
-
 participant Backend
-
 participant JWT
-
 User->>Frontend: Login
-
 Frontend->>Backend: Credentials
-
 Backend->>JWT: Generate Token
-
 JWT-->>Backend: Access Token
-
 Backend-->>Frontend: JWT
-
 Frontend->>Backend: Protected Request
-
 Backend->>JWT: Verify Token
-
 JWT-->>Backend: Valid
-
 Backend-->>Frontend: Protected Response
 ```
 
@@ -2109,29 +1430,15 @@ Backend-->>Frontend: Protected Response
 
 ```mermaid
 flowchart TD
-
-Request
-
--->
-
-JWTValidation
-
+Request --> JWTValidation
 JWTValidation --> Valid
-
 JWTValidation --> Invalid
-
 Valid --> UserContext
-
 UserContext --> RoleCheck
-
 RoleCheck --> Authorized
-
 RoleCheck --> Unauthorized
-
 Authorized --> ExecuteAPI
-
 Unauthorized --> Error403
-
 Invalid --> Error401
 ```
 
@@ -2141,7 +1448,6 @@ Invalid --> Error401
 
 ```mermaid
 flowchart LR
-
 Client --> PostImport[POST Repository Import] --> RepoService[Repository Service] --> CloneRepo[Clone Repository] --> RepoParser[Repository Parser] --> EmbedService[Embedding Service] --> LangGraph --> Ready[Repository Ready]
 ```
 
@@ -2153,33 +1459,11 @@ DevAssist is designed for cloud-native deployment.
 
 ```mermaid
 flowchart LR
-
-User
-
--->
-
-Browser
-
--->
-
-Nginx
-
--->
-
-ReactFrontend
-
--->
-
-ExpressBackend
-
+User --> Browser --> Nginx --> ReactFrontend --> ExpressBackend
 ExpressBackend --> SQLite
-
 ExpressBackend --> VectorDB
-
 ExpressBackend --> LangGraph
-
 LangGraph --> GroqAPI
-
 ExpressBackend --> GitHubAPI
 ```
 
@@ -2189,35 +1473,12 @@ ExpressBackend --> GitHubAPI
 
 ```mermaid
 flowchart TD
-
-DockerCompose
-
--->
-
-FrontendContainer
-
-DockerCompose
-
--->
-
-BackendContainer
-
-DockerCompose
-
--->
-
-SQLiteVolume
-
-DockerCompose
-
--->
-
-VectorDB
-
+DockerCompose --> FrontendContainer
+DockerCompose --> BackendContainer
+DockerCompose --> SQLiteVolume
+DockerCompose --> VectorDB
 BackendContainer --> SQLiteVolume
-
 BackendContainer --> VectorDB
-
 FrontendContainer --> BackendContainer
 ```
 
@@ -2229,29 +1490,13 @@ Every commit automatically triggers testing, building, and deployment.
 
 ```mermaid
 flowchart LR
-
-Developer
-
--->
-
-GitHub
-
--->
-
-GitHubActions
-
+Developer --> GitHub --> GitHubActions
 GitHubActions --> Install
-
 Install --> Lint
-
 Lint --> Test
-
 Test --> Build
-
 Build --> Docker
-
 Docker --> Deploy
-
 Deploy --> Production
 ```
 
@@ -2261,27 +1506,12 @@ Deploy --> Production
 
 ```mermaid
 flowchart TD
-
-Internet
-
--->
-
-LoadBalancer
-
--->
-
-Frontend
-
+Internet --> LoadBalancer --> Frontend
 Frontend --> API
-
 API --> Database
-
 API --> VectorDB
-
 API --> LangGraph
-
 LangGraph --> Groq
-
 API --> GitHub
 ```
 
@@ -2291,31 +1521,12 @@ API --> GitHub
 
 ```mermaid
 flowchart LR
-
-Application
-
--->
-
-Logs
-
-Application
-
--->
-
-Metrics
-
-Application
-
--->
-
-HealthChecks
-
+Application --> Logs
+Application --> Metrics
+Application --> HealthChecks
 Logs --> Dashboard
-
 Metrics --> Dashboard
-
 HealthChecks --> Dashboard
-
 Dashboard --> Admin
 ```
 
@@ -2325,23 +1536,12 @@ Dashboard --> Admin
 
 ```mermaid
 flowchart LR
-
-Request
-
--->
-
-CacheCheck
-
+Request --> CacheCheck
 CacheCheck --> CacheHit
-
 CacheCheck --> CacheMiss
-
 CacheMiss --> VectorSearch
-
 VectorSearch --> Groq
-
 Groq --> Response
-
 CacheHit --> Response
 ```
 
@@ -2351,36 +1551,7 @@ CacheHit --> Response
 
 ```mermaid
 flowchart TD
-
-User
-
--->
-
-HTTPS
-
--->
-
-JWTAuthentication
-
--->
-
-Authorization
-
--->
-
-InputValidation
-
--->
-
-RateLimiter
-
--->
-
-BusinessLogic
-
--->
-
-Database
+User --> HTTPS --> JWTAuthentication --> Authorization --> InputValidation --> RateLimiter --> BusinessLogic --> Database
 ```
 
 ---
@@ -2516,7 +1687,6 @@ The assistant retrieves only the most relevant repository context before generat
 
 ```mermaid
 flowchart LR
-
 Question --> Embedding --> VectorSearch[Vector Search] --> RelevantFiles[Relevant Files] --> ContextBuilder[Context Builder] --> GroqLLM[Groq LLM] --> Answer
 ```
 
@@ -2566,7 +1736,6 @@ The platform automatically:
 
 ```mermaid
 flowchart LR
-
 GitHub --> Validate[Repository Validation] --> Clone[Clone Repository] --> SaveMeta[Save Metadata] --> Ready[Repository Ready]
 ```
 
@@ -2606,7 +1775,6 @@ Workflow
 
 ```mermaid
 flowchart LR
-
 Repository --> TreeBuilder[Tree Builder] --> Explorer --> Developer
 ```
 
@@ -2660,7 +1828,6 @@ Workflow
 
 ```mermaid
 flowchart LR
-
 Query --> Embedding --> VectorSearch[Vector Search] --> Ranking --> Context --> Results
 ```
 
@@ -2698,7 +1865,6 @@ Workflow
 
 ```mermaid
 flowchart TD
-
 Repository --> Analyze --> Summarize --> MarkdownGen[Markdown Generator] --> Documentation
 ```
 
@@ -2742,7 +1908,6 @@ Workflow
 
 ```mermaid
 flowchart TD
-
 Repository --> Analysis[Repository Analysis] --> MarkdownGen[Markdown Generator] --> Readme[README.md]
 ```
 
@@ -2782,7 +1947,6 @@ Workflow
 
 ```mermaid
 flowchart LR
-
 Repository --> DepGraph[Dependency Graph] --> ArchAnalysis[Architecture Analysis] --> MermaidGen[Mermaid Generator] --> Diagram
 ```
 
@@ -2824,7 +1988,6 @@ Workflow
 
 ```mermaid
 flowchart LR
-
 SourceCode[Source Code] --> StaticAnalysis[Static Analysis] --> AIReview[AI Review] --> Suggestions --> Report
 ```
 
@@ -2864,7 +2027,6 @@ Workflow
 
 ```mermaid
 flowchart TD
-
 Repository --> SecurityAnalysis[Security Analysis] --> RiskDetection[Risk Detection] --> Report
 ```
 
@@ -2900,7 +2062,6 @@ Workflow
 
 ```mermaid
 flowchart LR
-
 Repository --> Imports --> DepGraph[Dependency Graph] --> Visualization
 ```
 
@@ -2946,7 +2107,6 @@ Workflow
 
 ```mermaid
 flowchart LR
-
 Repository --> Metrics --> AnalyticsEngine[Analytics Engine] --> Dashboard
 ```
 
@@ -2992,7 +2152,6 @@ Workflow
 
 ```mermaid
 flowchart LR
-
 Analysis --> ReportGen[Report Generator] --> Export --> Formats["PDF / HTML / Markdown"]
 ```
 
@@ -3423,7 +2582,6 @@ Import a repository and begin analyzing your codebase.
 
 ```mermaid
 flowchart LR
-
 Clone --> Install --> Configure --> Run --> ImportRepo[Import Repository] --> RepoAnalysis[Repository Analysis] --> AIProcessing[AI Processing] --> Dashboard
 ```
 
