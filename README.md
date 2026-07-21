@@ -1,6 +1,8 @@
 <div align="center">
 
-# DevAssist
+<img src="docs/assets/logo.png" width="140" alt="DevAssist Logo"/>
+
+# 🚀 DevAssist
 
 ### Autonomous Multi-Agent AI Software Engineering Platform
 
@@ -46,25 +48,25 @@ Powered by **LangGraph**, **LangChain**, **Groq**, **React**, **TypeScript**, an
 
 <a href="#-installation">
 
-<img src="https://img.shields.io/badge/Get_Started-2563EB?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/🚀_Get_Started-2563EB?style=for-the-badge"/>
 
 </a>
 
 <a href="#-features">
 
-<img src="https://img.shields.io/badge/Features-16A34A?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/✨_Features-16A34A?style=for-the-badge"/>
 
 </a>
 
 <a href="#-architecture">
 
-<img src="https://img.shields.io/badge/Architecture-EA580C?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/🏗_Architecture-EA580C?style=for-the-badge"/>
 
 </a>
 
 <a href="#-roadmap">
 
-<img src="https://img.shields.io/badge/Roadmap-9333EA?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/🛣_Roadmap-9333EA?style=for-the-badge"/>
 
 </a>
 
@@ -72,7 +74,7 @@ Powered by **LangGraph**, **LangChain**, **Groq**, **React**, **TypeScript**, an
 
 ---
 
-# Dashboard Preview
+# 📸 Dashboard Preview
 
 > Replace the image below with your latest dashboard screenshot.
 
@@ -84,9 +86,9 @@ Powered by **LangGraph**, **LangChain**, **Groq**, **React**, **TypeScript**, an
 
 ---
 
-# Feature Highlights
+# ✨ Feature Highlights
 
-| AI | Repository | Analytics | Productivity |
+| 🤖 AI | 📂 Repository | 📊 Analytics | ⚡ Productivity |
 |-------|---------------|--------------|----------------|
 | AI Repository Chat | GitHub Import | Repository Analytics | AI Code Review |
 | Documentation Generator | Repository Explorer | Activity Timeline | README Generator |
@@ -97,15 +99,15 @@ Powered by **LangGraph**, **LangChain**, **Groq**, **React**, **TypeScript**, an
 
 ---
 
-# Why DevAssist?
+# 🌟 Why DevAssist?
 
 <div align="center">
 
-| Understand | Search | Automate |
+| 🧠 Understand | 🔍 Search | 🤖 Automate |
 |--------------|-----------|-------------|
 | Explain any repository instantly | Semantic repository search | Autonomous AI agents |
 
-| Document | Review | Design |
+| 📖 Document | 🛡 Review | 🏗 Design |
 |-------------|-----------|-----------|
 | Generate complete documentation | AI-powered code reviews | Automatic architecture diagrams |
 
@@ -113,58 +115,58 @@ Powered by **LangGraph**, **LangChain**, **Groq**, **React**, **TypeScript**, an
 
 ---
 
-# What Can DevAssist Do?
+# 🎯 What Can DevAssist Do?
 
-Import GitHub repositories
+✅ Import GitHub repositories
 
-Clone repositories automatically
+✅ Clone repositories automatically
 
-Parse complete codebases
+✅ Parse complete codebases
 
-Build vector embeddings
+✅ Build vector embeddings
 
-Generate AI documentation
+✅ Generate AI documentation
 
-Explain files and folders
+✅ Explain files and folders
 
-Generate architecture diagrams
+✅ Generate architecture diagrams
 
-Review code quality
+✅ Review code quality
 
-Detect security issues
+✅ Detect security issues
 
-Semantic repository search
+✅ Semantic repository search
 
-README generation
+✅ README generation
 
-Dependency analysis
+✅ Dependency analysis
 
-Repository analytics
+✅ Repository analytics
 
-AI Repository Chat
+✅ AI Repository Chat
 
-Multi-Agent orchestration
-
----
+✅ Multi-Agent orchestration
 
 ---
 
-# Table of Contents
+---
 
-- [About DevAssist](#about-devassist)
-- [Problem Statement](#problem-statement)
-- [Solution Overview](#solution-overview)
-- [Project Vision](#project-vision)
-- [Why DevAssist?](#why-devassist)
-- [Enterprise Use Cases](#enterprise-use-cases)
-- [Core Capabilities](#core-capabilities)
-- [Key Highlights](#key-highlights)
-- [Project Goals](#project-goals)
-- [Target Users](#target-users)
+# 📑 Table of Contents
+
+- [📖 About DevAssist](#-about-devassist)
+- [🎯 Problem Statement](#-problem-statement)
+- [💡 Solution Overview](#-solution-overview)
+- [🚀 Project Vision](#-project-vision)
+- [✨ Why DevAssist?](#-why-devassist)
+- [🏢 Enterprise Use Cases](#-enterprise-use-cases)
+- [🎯 Core Capabilities](#-core-capabilities)
+- [⚡ Key Highlights](#-key-highlights)
+- [📈 Project Goals](#-project-goals)
+- [🌍 Target Users](#-target-users)
 
 ---
 
-# About DevAssist
+# 📖 About DevAssist
 
 **DevAssist** is an enterprise-grade AI Software Engineering Platform that combines **Large Language Models (LLMs)**, **Retrieval-Augmented Generation (RAG)**, **LangGraph**, and **Multi-Agent AI** to help developers understand, analyze, document, review, and maintain software repositories with minimal manual effort.
 
@@ -176,7 +178,7 @@ Whether working on a small open-source project or a large enterprise codebase, D
 
 ---
 
-# Problem Statement
+# 🎯 Problem Statement
 
 Modern software repositories are growing larger and more complex every year.
 
@@ -207,7 +209,7 @@ As repositories scale, these challenges lead to:
 
 ---
 
-# Solution Overview
+# 💡 Solution Overview
 
 DevAssist addresses these challenges through an autonomous AI-powered repository intelligence platform.
 
@@ -232,7 +234,7 @@ Instead of manually exploring hundreds of files, developers can simply ask natur
 
 ---
 
-# Project Vision
+# 🚀 Project Vision
 
 Our vision is to build the next generation of AI-powered software engineering assistants capable of acting as intelligent collaborators rather than simple code generators.
 
@@ -253,7 +255,7 @@ The long-term objective is to transform software repositories into interactive, 
 
 ---
 
-# Why DevAssist?
+# ✨ Why DevAssist?
 
 Unlike traditional AI coding assistants that focus primarily on code completion, DevAssist analyzes and understands entire repositories.
 
@@ -341,11 +343,11 @@ Accurate Response
 
 ---
 
-# Enterprise Use Cases
+# 🏢 Enterprise Use Cases
 
 DevAssist is suitable for a wide range of software engineering workflows.
 
-### Software Development
+### 👨‍💻 Software Development
 
 - Repository understanding
 - Feature implementation
@@ -355,7 +357,7 @@ DevAssist is suitable for a wide range of software engineering workflows.
 
 ---
 
-### Enterprise Teams
+### 🏢 Enterprise Teams
 
 - Developer onboarding
 - Architecture documentation
@@ -365,7 +367,7 @@ DevAssist is suitable for a wide range of software engineering workflows.
 
 ---
 
-### Code Reviews
+### 🔍 Code Reviews
 
 - Pull request analysis
 - Code quality assessment
@@ -375,7 +377,7 @@ DevAssist is suitable for a wide range of software engineering workflows.
 
 ---
 
-### Documentation
+### 📚 Documentation
 
 - README generation
 - API documentation
@@ -385,7 +387,7 @@ DevAssist is suitable for a wide range of software engineering workflows.
 
 ---
 
-### Security
+### 🔒 Security
 
 - Vulnerability detection
 - Dependency inspection
@@ -395,7 +397,7 @@ DevAssist is suitable for a wide range of software engineering workflows.
 
 ---
 
-### Engineering Analytics
+### 📊 Engineering Analytics
 
 - Repository insights
 - Code statistics
@@ -405,62 +407,62 @@ DevAssist is suitable for a wide range of software engineering workflows.
 
 ---
 
-# Core Capabilities
+# 🎯 Core Capabilities
 
 DevAssist provides a complete suite of AI-powered software engineering capabilities.
 
 | Capability | Description |
 |------------|-------------|
-| AI Repository Chat | Ask repository-specific questions using natural language |
-| GitHub Integration | Import public and private repositories |
-| Documentation Generator | Automatically generate project documentation |
-| README Generator | Create professional README files |
-| Architecture Generator | Generate Mermaid architecture diagrams |
-| Semantic Search | Search repositories using meaning instead of keywords |
-| Security Analysis | Detect vulnerabilities and security risks |
-| Dependency Analysis | Understand module relationships |
-| Repository Analytics | Visualize repository insights |
-| Multi-Agent AI | Specialized AI agents collaborate autonomously |
-| Project Insights | Repository health and engineering metrics |
-| AI Code Review | Automated code quality evaluation |
+| 🤖 AI Repository Chat | Ask repository-specific questions using natural language |
+| 📂 GitHub Integration | Import public and private repositories |
+| 📄 Documentation Generator | Automatically generate project documentation |
+| 📘 README Generator | Create professional README files |
+| 🏗 Architecture Generator | Generate Mermaid architecture diagrams |
+| 🔍 Semantic Search | Search repositories using meaning instead of keywords |
+| 🛡 Security Analysis | Detect vulnerabilities and security risks |
+| 🧠 Dependency Analysis | Understand module relationships |
+| 📊 Repository Analytics | Visualize repository insights |
+| ⚡ Multi-Agent AI | Specialized AI agents collaborate autonomously |
+| 📈 Project Insights | Repository health and engineering metrics |
+| 📝 AI Code Review | Automated code quality evaluation |
 
 ---
 
-# Key Highlights
+# ⚡ Key Highlights
 
-Enterprise-grade architecture
+✔ Enterprise-grade architecture
 
-Multi-Agent AI workflows powered by LangGraph
+✔ Multi-Agent AI workflows powered by LangGraph
 
-Retrieval-Augmented Generation (RAG)
+✔ Retrieval-Augmented Generation (RAG)
 
-Repository-aware conversational AI
+✔ Repository-aware conversational AI
 
-Semantic repository search
+✔ Semantic repository search
 
-Automatic documentation generation
+✔ Automatic documentation generation
 
-AI architecture visualization
+✔ AI architecture visualization
 
-AI code review
+✔ AI code review
 
-Security auditing
+✔ Security auditing
 
-Dependency analysis
+✔ Dependency analysis
 
-Repository analytics dashboard
+✔ Repository analytics dashboard
 
-Modern React + TypeScript frontend
+✔ Modern React + TypeScript frontend
 
-Fast Groq-powered inference
+✔ Fast Groq-powered inference
 
-Scalable backend architecture
+✔ Scalable backend architecture
 
-Extensible plugin-based agent system
+✔ Extensible plugin-based agent system
 
 ---
 
-# Project Goals
+# 📈 Project Goals
 
 The primary objectives of DevAssist are:
 
@@ -476,7 +478,7 @@ The primary objectives of DevAssist are:
 
 ---
 
-# Target Users
+# 🌍 Target Users
 
 DevAssist is designed for:
 
@@ -499,7 +501,7 @@ DevAssist is designed for:
 
 ---
 
-# Architecture
+# 🏗 Architecture
 
 DevAssist follows a modular, AI-first architecture designed to analyze, understand, and reason over complete software repositories. The platform combines modern web technologies with Retrieval-Augmented Generation (RAG), vector search, and autonomous multi-agent orchestration to deliver repository-aware AI assistance.
 
@@ -513,7 +515,7 @@ The architecture is designed around the following principles:
 
 ---
 
-# High-Level System Architecture
+# 🏛 High-Level System Architecture
 
 The following diagram illustrates the major components of DevAssist and how they interact.
 
@@ -599,7 +601,7 @@ VectorDB --> AIService
 
 ---
 
-# Component Architecture
+# 🏢 Component Architecture
 
 DevAssist is divided into several independent modules that communicate through well-defined interfaces.
 
@@ -615,7 +617,7 @@ DevAssist is divided into several independent modules that communicate through w
 
 ---
 
-# Layered Architecture
+# 🧱 Layered Architecture
 
 The application follows a layered architecture to separate concerns and improve maintainability.
 
@@ -671,9 +673,9 @@ AI --> Infrastructure
 
 ---
 
-# Core Components
+# ⚙ Core Components
 
-## Frontend
+## 🖥 Frontend
 
 The frontend provides an enterprise-grade developer experience through an interactive dashboard.
 
@@ -701,7 +703,7 @@ Technology Stack
 
 ---
 
-## Backend
+## ⚡ Backend
 
 The backend coordinates every operation inside DevAssist.
 
@@ -725,7 +727,7 @@ Technology Stack
 
 ---
 
-## AI Layer
+## 🤖 AI Layer
 
 The AI Layer is responsible for repository reasoning.
 
@@ -744,7 +746,7 @@ Responsibilities include:
 
 ---
 
-## Knowledge Layer
+## 🧠 Knowledge Layer
 
 The Knowledge Layer powers Retrieval-Augmented Generation (RAG).
 
@@ -761,7 +763,7 @@ Responsibilities:
 
 ---
 
-## Data Layer
+## 💾 Data Layer
 
 Repository metadata is stored separately from vector embeddings.
 
@@ -784,7 +786,7 @@ The Vector Database stores:
 
 ---
 
-# Architecture Principles
+# 🎯 Architecture Principles
 
 DevAssist is built around the following engineering principles.
 
@@ -824,7 +826,7 @@ The platform is designed to support:
 
 ---
 
-# Architecture Summary
+# 📊 Architecture Summary
 
 | Category | Technology |
 |------------|------------|
@@ -844,7 +846,7 @@ The platform is designed to support:
 
 ---
 
-# Overall Application Workflow
+# 🔄 Overall Application Workflow
 
 The following diagram illustrates the complete lifecycle of a repository from import to AI-powered insights.
 
@@ -904,7 +906,7 @@ Dashboard --> User
 
 ---
 
-# Repository Import Workflow
+# 📂 Repository Import Workflow
 
 DevAssist supports importing repositories from GitHub using Personal Access Tokens or public repository URLs.
 
@@ -944,7 +946,7 @@ UI-->>User: Display Repository
 
 ---
 
-# Repository Processing Pipeline
+# 📥 Repository Processing Pipeline
 
 Once imported, the repository moves through several processing stages before becoming AI-ready.
 
@@ -992,7 +994,7 @@ RepositoryReady
 
 ---
 
-# File Parsing Workflow
+# 📄 File Parsing Workflow
 
 Every source file is analyzed independently.
 
@@ -1040,7 +1042,7 @@ StructuredDocument
 
 ---
 
-# Chunking Pipeline
+# 📚 Chunking Pipeline
 
 Large files are split into semantically meaningful chunks.
 
@@ -1076,7 +1078,7 @@ EmbeddingQueue
 
 ---
 
-# Embedding Generation Pipeline
+# 🧠 Embedding Generation Pipeline
 
 Each chunk is transformed into a vector representation for semantic retrieval.
 
@@ -1108,7 +1110,7 @@ SimilarityIndex
 
 ---
 
-# Repository Indexing Workflow
+# 🗂 Repository Indexing Workflow
 
 Repository metadata and embeddings are indexed separately for efficient retrieval.
 
@@ -1148,7 +1150,7 @@ SearchEngine --> RepositoryKnowledgeBase
 
 ---
 
-# Retrieval-Augmented Generation (RAG) Architecture
+# 🔍 Retrieval-Augmented Generation (RAG) Architecture
 
 Every AI response is grounded in repository context using Retrieval-Augmented Generation.
 
@@ -1188,7 +1190,7 @@ FinalAnswer
 
 ---
 
-# AI Repository Chat Workflow
+# 💬 AI Repository Chat Workflow
 
 Natural language questions are answered using repository-specific knowledge.
 
@@ -1224,7 +1226,7 @@ Chat-->>User: Display Response
 
 ---
 
-# Semantic Search Workflow
+# 🔎 Semantic Search Workflow
 
 Unlike keyword search, DevAssist searches by meaning.
 
@@ -1260,7 +1262,7 @@ SearchResults
 
 ---
 
-# Repository Processing Stages
+# ⚡ Repository Processing Stages
 
 | Stage | Description |
 |---------|-------------|
@@ -1277,29 +1279,29 @@ SearchResults
 
 ---
 
-# Pipeline Advantages
+# 🎯 Pipeline Advantages
 
-Repository-aware AI responses
+✅ Repository-aware AI responses
 
-Semantic understanding instead of keyword matching
+✅ Semantic understanding instead of keyword matching
 
-Fast vector retrieval
+✅ Fast vector retrieval
 
-Parallel repository indexing
+✅ Parallel repository indexing
 
-Intelligent chunking strategy
+✅ Intelligent chunking strategy
 
-Optimized context retrieval
+✅ Optimized context retrieval
 
-Scalable knowledge base
+✅ Scalable knowledge base
 
-Accurate AI reasoning
-
----
+✅ Accurate AI reasoning
 
 ---
 
-# Multi-Agent AI Architecture
+---
+
+# 🤖 Multi-Agent AI Architecture
 
 DevAssist is powered by an autonomous **Multi-Agent AI System** built on **LangGraph**. Instead of relying on a single LLM prompt, the platform delegates repository analysis to specialized AI agents that execute independently and collaborate through a centralized orchestrator.
 
@@ -1307,7 +1309,7 @@ Each agent has a focused responsibility, allowing the system to perform complex 
 
 ---
 
-# LangGraph Orchestrator
+# 🧠 LangGraph Orchestrator
 
 The LangGraph Orchestrator serves as the central brain of the platform. It coordinates task execution, routes repository context to the appropriate AI agents, manages dependencies between tasks, and aggregates results into a unified response.
 
@@ -1357,23 +1359,23 @@ Dashboard --> User
 
 ---
 
-# AI Agent Responsibilities
+# 🏗 AI Agent Responsibilities
 
 | Agent | Responsibility |
 |---------|---------------|
-| Documentation Agent | Generates technical documentation |
-| README Agent | Creates professional README.md files |
-| Architecture Agent | Generates architecture diagrams and system documentation |
-| Search Agent | Handles semantic repository search |
-| Security Agent | Detects vulnerabilities and insecure code |
-| Dependency Agent | Builds dependency graphs |
-| Code Review Agent | Reviews source code quality |
-| Analytics Agent | Produces repository insights |
-| Knowledge Agent | Builds repository knowledge base |
+| 📝 Documentation Agent | Generates technical documentation |
+| 📘 README Agent | Creates professional README.md files |
+| 🏛 Architecture Agent | Generates architecture diagrams and system documentation |
+| 🔍 Search Agent | Handles semantic repository search |
+| 🛡 Security Agent | Detects vulnerabilities and insecure code |
+| 📦 Dependency Agent | Builds dependency graphs |
+| 👨‍💻 Code Review Agent | Reviews source code quality |
+| 📊 Analytics Agent | Produces repository insights |
+| 📚 Knowledge Agent | Builds repository knowledge base |
 
 ---
 
-# Multi-Agent Execution Workflow
+# 🔄 Multi-Agent Execution Workflow
 
 The repository is analyzed in parallel by independent AI agents.
 
@@ -1419,7 +1421,7 @@ Response --> Dashboard
 
 ---
 
-# Documentation Generation Workflow
+# 📖 Documentation Generation Workflow
 
 The Documentation Agent automatically creates project documentation by analyzing repository structure, modules, APIs, and comments.
 
@@ -1455,7 +1457,7 @@ Documentation
 
 ---
 
-# README Generation Workflow
+# 📘 README Generation Workflow
 
 The README Agent generates a complete README.md using repository metadata and AI-generated insights.
 
@@ -1491,7 +1493,7 @@ README
 
 ---
 
-# Architecture Generation Workflow
+# 🏛 Architecture Generation Workflow
 
 The Architecture Agent identifies relationships between modules and generates visual system diagrams.
 
@@ -1523,7 +1525,7 @@ ArchitectureDiagram
 
 ---
 
-# AI Code Review Workflow
+# 👨‍💻 AI Code Review Workflow
 
 The Code Review Agent evaluates code quality, maintainability, complexity, and best practices.
 
@@ -1559,7 +1561,7 @@ ReviewReport
 
 ---
 
-# Security Analysis Workflow
+# 🛡 Security Analysis Workflow
 
 The Security Agent scans repositories for vulnerabilities, insecure dependencies, exposed secrets, and OWASP risks.
 
@@ -1595,7 +1597,7 @@ SecurityReport
 
 ---
 
-# Dependency Analysis Workflow
+# 📦 Dependency Analysis Workflow
 
 The Dependency Agent constructs an internal dependency graph for better repository understanding.
 
@@ -1627,7 +1629,7 @@ DependencyGraph
 
 ---
 
-# Analytics Generation Workflow
+# 📊 Analytics Generation Workflow
 
 The Analytics Agent produces engineering insights about the repository.
 
@@ -1663,7 +1665,7 @@ DashboardMetrics
 
 ---
 
-# AI Response Generation
+# 💬 AI Response Generation
 
 After every AI agent completes its task, LangGraph merges all outputs into a single coherent response.
 
@@ -1723,7 +1725,7 @@ FinalResponse
 
 ---
 
-# Agent Communication Flow
+# 🔀 Agent Communication Flow
 
 Agents communicate through shared repository state managed by LangGraph.
 
@@ -1775,7 +1777,7 @@ SharedState --> FinalResponse
 
 ---
 
-# Parallel Execution Model
+# 🚀 Parallel Execution Model
 
 Independent AI agents execute simultaneously, reducing repository processing time.
 
@@ -1819,7 +1821,7 @@ Agent7 --> Finish
 
 ---
 
-# Multi-Agent Benefits
+# 🎯 Multi-Agent Benefits
 
 | Feature | Benefit |
 |----------|---------|
@@ -1834,7 +1836,7 @@ Agent7 --> Finish
 
 ---
 
-# AI Processing Pipeline Summary
+# 📈 AI Processing Pipeline Summary
 
 ```text
 Repository
@@ -1864,7 +1866,7 @@ Docs README Review Security Search Analytics Architecture
 
 ---
 
-# Database Architecture
+# 🗄 Database Architecture
 
 DevAssist separates structured metadata from semantic knowledge. Repository metadata is stored in a relational database, while embeddings are stored in a vector database for Retrieval-Augmented Generation (RAG).
 
@@ -1976,7 +1978,7 @@ string value
 
 ---
 
-# Database Schema Overview
+# 📊 Database Schema Overview
 
 | Table | Purpose |
 |---------|----------|
@@ -1991,7 +1993,7 @@ string value
 
 ---
 
-# REST API Architecture
+# 🔌 REST API Architecture
 
 The frontend communicates exclusively through the Express REST API.
 
@@ -2027,7 +2029,7 @@ AnalyticsService --> SQLite
 
 ---
 
-# API Request Lifecycle
+# 🌐 API Request Lifecycle
 
 ```mermaid
 sequenceDiagram
@@ -2067,7 +2069,7 @@ React-->>User: Update UI
 
 ---
 
-# Authentication Flow
+# 🔑 Authentication Flow
 
 DevAssist secures every API request using JWT-based authentication.
 
@@ -2103,7 +2105,7 @@ Backend-->>Frontend: Protected Response
 
 ---
 
-# Authorization Workflow
+# 🔐 Authorization Workflow
 
 ```mermaid
 flowchart TD
@@ -2135,17 +2137,45 @@ Invalid --> Error401
 
 ---
 
-# Repository Processing API
+# 📡 Repository Processing API
 
 ```mermaid
 flowchart LR
 
-Client --> PostImport[POST Repository Import] --> RepoService[Repository Service] --> CloneRepo[Clone Repository] --> RepoParser[Repository Parser] --> EmbedService[Embedding Service] --> LangGraph --> Ready[Repository Ready]
+Client
+
+-->
+
+POST Repository Import
+
+-->
+
+Repository Service
+
+-->
+
+Clone Repository
+
+-->
+
+Repository Parser
+
+-->
+
+Embedding Service
+
+-->
+
+LangGraph
+
+-->
+
+Repository Ready
 ```
 
 ---
 
-# Deployment Architecture
+# ☁ Deployment Architecture
 
 DevAssist is designed for cloud-native deployment.
 
@@ -2183,7 +2213,7 @@ ExpressBackend --> GitHubAPI
 
 ---
 
-# Docker Architecture
+# 🐳 Docker Architecture
 
 ```mermaid
 flowchart TD
@@ -2221,7 +2251,7 @@ FrontendContainer --> BackendContainer
 
 ---
 
-# CI/CD Pipeline
+# 🚀 CI/CD Pipeline
 
 Every commit automatically triggers testing, building, and deployment.
 
@@ -2255,7 +2285,7 @@ Deploy --> Production
 
 ---
 
-# Production Infrastructure
+# 📦 Production Infrastructure
 
 ```mermaid
 flowchart TD
@@ -2285,7 +2315,7 @@ API --> GitHub
 
 ---
 
-# Monitoring Architecture
+# 📈 Monitoring Architecture
 
 ```mermaid
 flowchart LR
@@ -2319,7 +2349,7 @@ Dashboard --> Admin
 
 ---
 
-# Performance Optimization Pipeline
+# ⚡ Performance Optimization Pipeline
 
 ```mermaid
 flowchart LR
@@ -2345,7 +2375,7 @@ CacheHit --> Response
 
 ---
 
-# Security Architecture
+# 🛡 Security Architecture
 
 ```mermaid
 flowchart TD
@@ -2383,7 +2413,7 @@ Database
 
 ---
 
-# Project Structure
+# 📂 Project Structure
 
 ```text
 devassist/
@@ -2436,7 +2466,7 @@ devassist/
 
 ---
 
-# Infrastructure Summary
+# 🏗 Infrastructure Summary
 
 | Component | Technology |
 |------------|------------|
@@ -2455,7 +2485,7 @@ devassist/
 
 ---
 
-# Architecture Highlights
+# 🎯 Architecture Highlights
 
 - Enterprise-ready layered architecture
 - Modular AI agent system
@@ -2471,7 +2501,7 @@ devassist/
 
 ---
 
-# Core Features
+# ✨ Core Features
 
 DevAssist combines Artificial Intelligence, Retrieval-Augmented Generation (RAG), Semantic Search, and Multi-Agent orchestration into a unified software engineering platform.
 
@@ -2479,7 +2509,7 @@ The platform consists of several intelligent modules working together to automat
 
 ---
 
-# AI Repository Chat
+# 🤖 AI Repository Chat
 
 ## Overview
 
@@ -2515,20 +2545,40 @@ The assistant retrieves only the most relevant repository context before generat
 ```mermaid
 flowchart LR
 
-Question --> Embedding --> VectorSearch[Vector Search] --> RelevantFiles[Relevant Files] --> ContextBuilder[Context Builder] --> GroqLLM[Groq LLM] --> Answer
+Question
+
+-->
+
+Embedding
+
+-->
+
+Vector Search
+
+-->
+
+Relevant Files
+
+-->
+
+Context Builder
+
+-->
+
+Groq LLM
+
+-->
+
+Answer
 ```
 
 ---
 
-**Screenshot Placeholder**
-
-```
-docs/screenshots/ai-chat.png
-```
+<img src="docs/screenshots/ai-chat.png" width="95%" alt="AI Chat Assistant"/>
 
 ---
 
-# GitHub Repository Import
+# 📂 GitHub Repository Import
 
 ## Overview
 
@@ -2565,20 +2615,32 @@ The platform automatically:
 ```mermaid
 flowchart LR
 
-GitHub --> Validate[Repository Validation] --> Clone[Clone Repository] --> SaveMeta[Save Metadata] --> Ready[Repository Ready]
+GitHub
+
+-->
+
+Repository Validation
+
+-->
+
+Clone Repository
+
+-->
+
+Save Metadata
+
+-->
+
+Repository Ready
 ```
 
 ---
 
-Screenshot
-
-```
-docs/screenshots/import.png
-```
+<img src="docs/screenshots/import.png" width="95%" alt="Repository Import"/>
 
 ---
 
-# Repository Explorer
+# 📁 Repository Explorer
 
 Browse the repository structure directly inside the dashboard.
 
@@ -2605,20 +2667,28 @@ Workflow
 ```mermaid
 flowchart LR
 
-Repository --> TreeBuilder[Tree Builder] --> Explorer --> Developer
+Repository
+
+-->
+
+Tree Builder
+
+-->
+
+Explorer
+
+-->
+
+Developer
 ```
 
 ---
 
-Screenshot
-
-```
-docs/screenshots/explorer.png
-```
+<img src="docs/screenshots/explorer.png" width="95%" alt="Repository Explorer"/>
 
 ---
 
-# Semantic Repository Search
+# 🔍 Semantic Repository Search
 
 Unlike keyword search, semantic search understands the intent behind your queries.
 
@@ -2659,20 +2729,36 @@ Workflow
 ```mermaid
 flowchart LR
 
-Query --> Embedding --> VectorSearch[Vector Search] --> Ranking --> Context --> Results
+Query
+
+-->
+
+Embedding
+
+-->
+
+Vector Search
+
+-->
+
+Ranking
+
+-->
+
+Context
+
+-->
+
+Results
 ```
 
 ---
 
-Screenshot
-
-```
-docs/screenshots/search.png
-```
+<img src="docs/screenshots/search.png" width="95%" alt="Semantic Search"/>
 
 ---
 
-# AI Documentation Generator
+# 📖 AI Documentation Generator
 
 Automatically generates technical documentation for repositories.
 
@@ -2697,20 +2783,32 @@ Workflow
 ```mermaid
 flowchart TD
 
-Repository --> Analyze --> Summarize --> MarkdownGen[Markdown Generator] --> Documentation
+Repository
+
+-->
+
+Analyze
+
+-->
+
+Summarize
+
+-->
+
+Markdown Generator
+
+-->
+
+Documentation
 ```
 
 ---
 
-Screenshot
-
-```
-docs/screenshots/documentation.png
-```
+<img src="docs/screenshots/documentation.png" width="95%" alt="AI Documentation Generator"/>
 
 ---
 
-# AI README Generator
+# 📘 AI README Generator
 
 Generate professional README files for any repository.
 
@@ -2741,20 +2839,28 @@ Workflow
 ```mermaid
 flowchart TD
 
-Repository --> Analysis[Repository Analysis] --> MarkdownGen[Markdown Generator] --> Readme[README.md]
+Repository
+
+-->
+
+Repository Analysis
+
+-->
+
+Markdown Generator
+
+-->
+
+README.md
 ```
 
 ---
 
-Screenshot
-
-```
-docs/screenshots/readme.png
-```
+<img src="docs/screenshots/readme.png" width="95%" alt="AI README Generator"/>
 
 ---
 
-# AI Architecture Generator
+# 🏗 AI Architecture Generator
 
 Automatically generates architecture documentation and Mermaid diagrams.
 
@@ -2781,20 +2887,32 @@ Workflow
 ```mermaid
 flowchart LR
 
-Repository --> DepGraph[Dependency Graph] --> ArchAnalysis[Architecture Analysis] --> MermaidGen[Mermaid Generator] --> Diagram
+Repository
+
+-->
+
+Dependency Graph
+
+-->
+
+Architecture Analysis
+
+-->
+
+Mermaid Generator
+
+-->
+
+Diagram
 ```
 
 ---
 
-Screenshot
-
-```
-docs/screenshots/architecture.png
-```
+<img src="docs/screenshots/architecture.png" width="95%" alt="AI Architecture Generator"/>
 
 ---
 
-# AI Code Review
+# 👨‍💻 AI Code Review
 
 Analyze repositories for:
 
@@ -2823,20 +2941,32 @@ Workflow
 ```mermaid
 flowchart LR
 
-SourceCode[Source Code] --> StaticAnalysis[Static Analysis] --> AIReview[AI Review] --> Suggestions --> Report
+Source Code
+
+-->
+
+Static Analysis
+
+-->
+
+AI Review
+
+-->
+
+Suggestions
+
+-->
+
+Report
 ```
 
 ---
 
-Screenshot
-
-```
-docs/screenshots/review.png
-```
+<img src="docs/screenshots/review.png" width="95%" alt="AI Code Review"/>
 
 ---
 
-# AI Security Scanner
+# 🛡 AI Security Scanner
 
 Detects:
 
@@ -2863,20 +2993,28 @@ Workflow
 ```mermaid
 flowchart TD
 
-Repository --> SecurityAnalysis[Security Analysis] --> RiskDetection[Risk Detection] --> Report
+Repository
+
+-->
+
+Security Analysis
+
+-->
+
+Risk Detection
+
+-->
+
+Report
 ```
 
 ---
 
-Screenshot
-
-```
-docs/screenshots/security.png
-```
+<img src="docs/screenshots/security.png" width="95%" alt="AI Security Scanner"/>
 
 ---
 
-# Dependency Analysis
+# 📦 Dependency Analysis
 
 Visualizes relationships between packages, modules, and services.
 
@@ -2899,20 +3037,28 @@ Workflow
 ```mermaid
 flowchart LR
 
-Repository --> Imports --> DepGraph[Dependency Graph] --> Visualization
+Repository
+
+-->
+
+Imports
+
+-->
+
+Dependency Graph
+
+-->
+
+Visualization
 ```
 
 ---
 
-Screenshot
-
-```
-docs/screenshots/dependency.png
-```
+<img src="docs/screenshots/dependency.png" width="95%" alt="Dependency Analysis"/>
 
 ---
 
-# Repository Analytics Dashboard
+# 📊 Repository Analytics Dashboard
 
 Monitor repository health through real-time analytics.
 
@@ -2945,20 +3091,28 @@ Workflow
 ```mermaid
 flowchart LR
 
-Repository --> Metrics --> AnalyticsEngine[Analytics Engine] --> Dashboard
+Repository
+
+-->
+
+Metrics
+
+-->
+
+Analytics Engine
+
+-->
+
+Dashboard
 ```
 
 ---
 
-Screenshot
-
-```
-docs/screenshots/analytics.png
-```
+<img src="docs/screenshots/analytics.png" width="95%" alt="Repository Analytics Dashboard"/>
 
 ---
 
-# AI Report Export
+# 📑 AI Report Export
 
 Export repository insights into professional reports.
 
@@ -2991,31 +3145,43 @@ Workflow
 ```mermaid
 flowchart LR
 
-Analysis --> ReportGen[Report Generator] --> Export --> Formats["PDF / HTML / Markdown"]
+Analysis
+
+-->
+
+Report Generator
+
+-->
+
+Export
+
+-->
+
+PDF / HTML / Markdown
 ```
 
 ---
 
-# Feature Summary
+# ⚡ Feature Summary
 
 | Feature | Status |
 |----------|--------|
-| AI Repository Chat | Yes |
-| GitHub Import | Yes |
-| Repository Explorer | Yes |
-| Semantic Search | Yes |
-| Documentation Generator | Yes |
-| README Generator | Yes |
-| Architecture Generator | Yes |
-| AI Code Review | Yes |
-| Security Scanner | Yes |
-| Dependency Analysis | Yes |
-| Repository Analytics | Yes |
-| Report Export | Yes |
+| AI Repository Chat | ✅ |
+| GitHub Import | ✅ |
+| Repository Explorer | ✅ |
+| Semantic Search | ✅ |
+| Documentation Generator | ✅ |
+| README Generator | ✅ |
+| Architecture Generator | ✅ |
+| AI Code Review | ✅ |
+| Security Scanner | ✅ |
+| Dependency Analysis | ✅ |
+| Repository Analytics | ✅ |
+| Report Export | ✅ |
 
 ---
 
-# Why These Features Matter
+# 🎯 Why These Features Matter
 
 DevAssist is more than a chatbot. It is an AI-powered software engineering platform that helps developers:
 
@@ -3034,13 +3200,13 @@ DevAssist is more than a chatbot. It is an AI-powered software engineering platf
 
 ---
 
-# Technology Stack
+# 🛠 Technology Stack
 
 DevAssist is built using a modern, scalable, and enterprise-grade technology stack. Each technology has been carefully selected to provide high performance, maintainability, and developer productivity.
 
 ---
 
-# Frontend Stack
+# 🖥 Frontend Stack
 
 The frontend provides a modern developer experience with a responsive dashboard, AI chat interface, repository explorer, and analytics.
 
@@ -3061,7 +3227,7 @@ The frontend provides a modern developer experience with a responsive dashboard,
 
 ---
 
-# Backend Stack
+# ⚙ Backend Stack
 
 The backend exposes REST APIs and coordinates repository processing.
 
@@ -3078,7 +3244,7 @@ The backend exposes REST APIs and coordinates repository processing.
 
 ---
 
-# AI Stack
+# 🤖 AI Stack
 
 DevAssist leverages Retrieval-Augmented Generation (RAG) together with Multi-Agent orchestration.
 
@@ -3093,7 +3259,7 @@ DevAssist leverages Retrieval-Augmented Generation (RAG) together with Multi-Age
 
 ---
 
-# Database Stack
+# 🗄 Database Stack
 
 | Technology | Purpose |
 |------------|---------|
@@ -3103,7 +3269,7 @@ DevAssist leverages Retrieval-Augmented Generation (RAG) together with Multi-Age
 
 ---
 
-# DevOps & Infrastructure
+# ☁ DevOps & Infrastructure
 
 | Technology | Purpose |
 |------------|---------|
@@ -3116,7 +3282,7 @@ DevAssist leverages Retrieval-Augmented Generation (RAG) together with Multi-Age
 
 ---
 
-# Testing Stack
+# 🧪 Testing Stack
 
 | Technology | Purpose |
 |------------|---------|
@@ -3128,7 +3294,7 @@ DevAssist leverages Retrieval-Augmented Generation (RAG) together with Multi-Age
 
 ---
 
-# Third-Party Integrations
+# 📦 Third-Party Integrations
 
 | Service | Purpose |
 |---------|---------|
@@ -3140,7 +3306,7 @@ DevAssist leverages Retrieval-Augmented Generation (RAG) together with Multi-Age
 
 ---
 
-# Complete Technology Overview
+# 📊 Complete Technology Overview
 
 ```text
 Frontend
@@ -3184,7 +3350,7 @@ Infrastructure
 
 ---
 
-# Project Structure
+# 📁 Project Structure
 
 The project follows a modular architecture that separates concerns and promotes maintainability.
 
@@ -3275,7 +3441,7 @@ devassist/
 
 ---
 
-# Directory Responsibilities
+# 📂 Directory Responsibilities
 
 | Directory | Responsibility |
 |------------|---------------|
@@ -3292,7 +3458,7 @@ devassist/
 
 ---
 
-# Prerequisites
+# 🔧 Prerequisites
 
 Before running DevAssist, ensure the following software is installed:
 
@@ -3314,7 +3480,7 @@ docker --version
 
 ---
 
-# Environment Variables
+# 🔑 Environment Variables
 
 Create a `.env` file in the project root.
 
@@ -3344,7 +3510,7 @@ LOG_LEVEL=info
 
 ---
 
-# Installation
+# 🚀 Installation
 
 Clone the repository.
 
@@ -3402,7 +3568,7 @@ Import a repository and begin analyzing your codebase.
 
 ---
 
-# Available Scripts
+# ⚙ Available Scripts
 
 | Command | Description |
 |----------|-------------|
@@ -3417,17 +3583,45 @@ Import a repository and begin analyzing your codebase.
 
 ---
 
-# Development Workflow
+# 💡 Development Workflow
 
 ```mermaid
 flowchart LR
 
-Clone --> Install --> Configure --> Run --> ImportRepo[Import Repository] --> RepoAnalysis[Repository Analysis] --> AIProcessing[AI Processing] --> Dashboard
+Clone
+
+-->
+
+Install
+
+-->
+
+Configure
+
+-->
+
+Run
+
+-->
+
+Import Repository
+
+-->
+
+Repository Analysis
+
+-->
+
+AI Processing
+
+-->
+
+Dashboard
 ```
 
 ---
 
-# Technology Summary
+# 📋 Technology Summary
 
 | Category | Stack |
 |----------|-------|
@@ -3442,31 +3636,3 @@ Clone --> Install --> Configure --> Run --> ImportRepo[Import Repository] --> Re
 | Testing | Vitest, Playwright |
 
 ---
-
-# License
-
-This project is licensed under the **MIT License**.
-
-```
-Copyright (c) 2026 Yash Vardhan
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to
-deal in the Software without restriction, including without limitation the
-rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
-sell copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
-FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
-DEALINGS IN THE SOFTWARE.
-```
-
-
