@@ -80,7 +80,7 @@ Powered by **LangGraph**, **LangChain**, **Groq**, **React**, **TypeScript**, an
 
 <p align="center">
 
-<img src="docs/screenshots/dashboard.png" width="95%" alt="Dashboard"/>
+<img src="docs/ScreenShots/dashboard.png" width="95%" alt="Dashboard"/>
 
 </p>
 
@@ -2574,7 +2574,7 @@ Answer
 
 ---
 
-<img src="docs/screenshots/ai-chat.png" width="95%" alt="AI Chat Assistant"/>
+<img src="docs/ScreenShots/ai-chat.png" width="95%" alt="AI Chat Assistant"/>
 
 ---
 
@@ -2636,7 +2636,7 @@ Repository Ready
 
 ---
 
-<img src="docs/screenshots/import.png" width="95%" alt="Repository Import"/>
+<img src="docs/ScreenShots/import.png" width="95%" alt="Repository Import"/>
 
 ---
 
@@ -2684,7 +2684,7 @@ Developer
 
 ---
 
-<img src="docs/screenshots/explorer.png" width="95%" alt="Repository Explorer"/>
+<img src="docs/ScreenShots/explorer.png" width="95%" alt="Repository Explorer"/>
 
 ---
 
@@ -2754,7 +2754,7 @@ Results
 
 ---
 
-<img src="docs/screenshots/search.png" width="95%" alt="Semantic Search"/>
+<img src="docs/ScreenShots/search.png" width="95%" alt="Semantic Search"/>
 
 ---
 
@@ -2804,7 +2804,7 @@ Documentation
 
 ---
 
-<img src="docs/screenshots/documentation.png" width="95%" alt="AI Documentation Generator"/>
+<img src="docs/ScreenShots/documentation.png" width="95%" alt="AI Documentation Generator"/>
 
 ---
 
@@ -2856,7 +2856,7 @@ README.md
 
 ---
 
-<img src="docs/screenshots/readme.png" width="95%" alt="AI README Generator"/>
+<img src="docs/ScreenShots/readme.png" width="95%" alt="AI README Generator"/>
 
 ---
 
@@ -2908,7 +2908,7 @@ Diagram
 
 ---
 
-<img src="docs/screenshots/architecture.png" width="95%" alt="AI Architecture Generator"/>
+<img src="docs/ScreenShots/architecture.png" width="95%" alt="AI Architecture Generator"/>
 
 ---
 
@@ -2962,7 +2962,7 @@ Report
 
 ---
 
-<img src="docs/screenshots/review.png" width="95%" alt="AI Code Review"/>
+<img src="docs/ScreenShots/review.png" width="95%" alt="AI Code Review"/>
 
 ---
 
@@ -3010,7 +3010,7 @@ Report
 
 ---
 
-<img src="docs/screenshots/security.png" width="95%" alt="AI Security Scanner"/>
+<img src="docs/ScreenShots/security.png" width="95%" alt="AI Security Scanner"/>
 
 ---
 
@@ -3054,7 +3054,7 @@ Visualization
 
 ---
 
-<img src="docs/screenshots/dependency.png" width="95%" alt="Dependency Analysis"/>
+<img src="docs/ScreenShots/dependency.png" width="95%" alt="Dependency Analysis"/>
 
 ---
 
@@ -3108,7 +3108,7 @@ Dashboard
 
 ---
 
-<img src="docs/screenshots/analytics.png" width="95%" alt="Repository Analytics Dashboard"/>
+<img src="docs/ScreenShots/analytics.png" width="95%" alt="Repository Analytics Dashboard"/>
 
 ---
 
