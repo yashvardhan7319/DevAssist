@@ -8,6 +8,7 @@ import { Routes, Route, useNavigate, useLocation } from "react-router-dom";
 import toast from "react-hot-toast";
 import { motion } from "motion/react";
 import {
+  Cpu,
   LogOut,
   Bell,
   CheckCircle,
@@ -111,15 +112,13 @@ export default function App() {
             className="flex items-center gap-2.5 cursor-pointer"
             onClick={() => navigate('/')}
           >
-            <img
-              src="/devassist-logo.png"
-              alt="DevAssist"
-              className="h-8 w-8 object-contain"
-            />
-            <span className="font-bold text-slate-200 tracking-tight hidden sm:inline-block">
+            <div className="p-2 bg-indigo-600/10 border border-indigo-500/20 rounded-lg text-indigo-400">
+              <Cpu size={20} />
+            </div>
+            <span className="font-bold text-white tracking-tight hidden sm:inline-block">
               DevAssist
             </span>
-            <span className="font-bold text-slate-200 tracking-tight sm:hidden">
+            <span className="font-bold text-white tracking-tight sm:hidden">
               DevAssist
             </span>
           </div>

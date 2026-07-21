@@ -34,6 +34,15 @@ interface KnowledgeBaseProps {
   analyses: any[];
 }
 
+const safeText = (val: any, fallback = "Not available"): string => {
+  if (!val && val !== 0) return fallback;
+  if (typeof val === "string") return val;
+  if (typeof val === "object") {
+    return val.summary || val.description || val.overview || val.text || JSON.stringify(val, null, 2);
+  }
+  return String(val);
+};
+
 export function KnowledgeBase({ repoId, authToken, onRefreshRepo, analyses }: KnowledgeBaseProps) {
   const [loading, setLoading] = useState(true);
   const [generating, setGenerating] = useState(false);
@@ -381,7 +390,7 @@ export function KnowledgeBase({ repoId, authToken, onRefreshRepo, analyses }: Kn
                   <h3 className="font-bold text-white text-xs uppercase tracking-wider">Repository Summary</h3>
                 </div>
                 <p className="text-xs text-slate-300 leading-relaxed whitespace-pre-wrap font-sans">
-                  {kb.projectSummary}
+                  {safeText(kb.projectSummary, "No project summary generated yet.")}
                 </p>
               </div>
             </div>
@@ -393,7 +402,7 @@ export function KnowledgeBase({ repoId, authToken, onRefreshRepo, analyses }: Kn
                   <h3 className="font-bold text-white text-xs uppercase tracking-wider">Technology Stack Summary</h3>
                 </div>
                 <p className="text-xs text-slate-300 leading-relaxed whitespace-pre-wrap font-sans">
-                  {kb.technologyStackSummary}
+                  {safeText(kb.technologyStackSummary, "No technology stack summary generated yet.")}
                 </p>
               </div>
             </div>
@@ -405,7 +414,7 @@ export function KnowledgeBase({ repoId, authToken, onRefreshRepo, analyses }: Kn
                   <h3 className="font-bold text-white text-xs uppercase tracking-wider">Architecture Summary</h3>
                 </div>
                 <p className="text-xs text-slate-300 leading-relaxed whitespace-pre-wrap font-sans">
-                  {kb.architectureSummary}
+                  {safeText(kb.architectureSummary, "No architecture summary generated yet.")}
                 </p>
               </div>
             </div>
@@ -417,7 +426,7 @@ export function KnowledgeBase({ repoId, authToken, onRefreshRepo, analyses }: Kn
                 <h3 className="font-bold text-white text-xs uppercase tracking-wider">File System Folder Summary Tree</h3>
               </div>
               <pre className="font-mono text-xs bg-slate-950/80 border border-slate-900/60 p-4 rounded-xl text-slate-300 max-h-96 overflow-y-auto leading-relaxed">
-                {kb.folderTree}
+                {typeof kb.folderTree === "string" ? kb.folderTree : JSON.stringify(kb.folderTree, null, 2) || "No folder tree available."}
               </pre>
             </div>
           </div>

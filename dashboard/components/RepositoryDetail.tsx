@@ -40,6 +40,39 @@ const TabLoadingPlaceholder = () => (
   </div>
 );
 
+class TabErrorBoundary extends React.Component<{ children: React.ReactNode }, { hasError: boolean; error: any }> {
+  constructor(props: { children: React.ReactNode }) {
+    super(props);
+    this.state = { hasError: false, error: null };
+  }
+  static getDerivedStateFromError(error: any) {
+    return { hasError: true, error };
+  }
+  componentDidCatch(error: any, errorInfo: any) {
+    console.error("Tab view caught an error:", error, errorInfo);
+  }
+  render() {
+    if (this.state.hasError) {
+      return (
+        <div className="text-center py-16 bg-slate-900/40 border border-rose-900/40 rounded-2xl max-w-2xl mx-auto p-8 my-8 shadow-xl">
+          <AlertCircle size={44} className="text-rose-400 mx-auto mb-4" />
+          <h3 className="text-lg font-bold text-white mb-2">Component Render Encountered an Error</h3>
+          <p className="text-xs text-slate-400 mb-6 font-mono break-all bg-slate-950 p-4 rounded-xl border border-slate-800 text-left overflow-auto max-h-48">
+            {String(this.state.error?.message || this.state.error || "Unknown rendering exception")}
+          </p>
+          <button
+            onClick={() => this.setState({ hasError: false, error: null })}
+            className="bg-indigo-600 hover:bg-indigo-500 text-white font-bold px-6 py-2.5 rounded-xl text-xs transition shadow-lg shadow-indigo-600/20"
+          >
+            Retry & Reset View
+          </button>
+        </div>
+      );
+    }
+    return this.props.children;
+  }
+}
+
 export default function RepositoryDetail() {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
@@ -243,7 +276,8 @@ export default function RepositoryDetail() {
 
       {/* Dynamic Tab Views */}
       <div className="min-h-[400px]">
-        <React.Suspense fallback={<TabLoadingPlaceholder />}>
+        <TabErrorBoundary>
+          <React.Suspense fallback={<TabLoadingPlaceholder />}>
           {/* TAB 1: FILES WORKSPACE */}
         {activeTab === "files" && (
           <CodeViewer
@@ -851,7 +885,8 @@ export default function RepositoryDetail() {
           <OrchestratorDashboard repositoryId={repository.id} authToken={authToken} />
         )}
 
-        </React.Suspense>
+          </React.Suspense>
+        </TabErrorBoundary>
       </div>
     </div>
   );

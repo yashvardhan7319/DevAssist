@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "motion/react";
-import { Github, Shield } from "lucide-react";
+import { Github, Shield, Terminal } from "lucide-react";
 import { api } from "../services/api";
 
 interface AuthProps {
@@ -69,22 +69,22 @@ export default function Auth({ onAuthSuccess }: AuthProps) {
   };
 
   return (
-    <div className="min-h-screen bg-slate-950 flex flex-col items-center justify-center p-4 relative overflow-hidden">
+    <div className="min-h-screen bg-[#070b13] flex flex-col items-center justify-center p-4 relative overflow-hidden">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="w-full max-w-md bg-slate-900 border border-slate-700 rounded-2xl overflow-hidden p-8"
+        className="w-full max-w-md bg-[#0f172a]/95 border border-slate-800 rounded-2xl shadow-2xl overflow-hidden p-8"
       >
-        <div className="text-center mb-8 flex flex-col items-center">
-          <img
-            src="/devassist-logo.png"
-            alt="DevAssist"
-            className="h-10 w-10 object-contain mb-4 cursor-default"
+        <div className="text-center mb-8">
+          <div 
+            className="inline-flex items-center justify-center p-3 bg-indigo-500/10 border border-indigo-500/20 rounded-xl text-indigo-400 mb-4 cursor-default"
             onDoubleClick={() => setShowHiddenLogin(!showHiddenLogin)}
-          />
-          <h1 className="text-3xl tracking-tight text-slate-100 mb-2" style={{ fontFamily: "'Instrument Serif', serif" }}>DevAssist</h1>
-          <p className="text-sm text-slate-500">Multi-agent codebase auditing, testing &amp; documentation</p>
+          >
+            <Terminal size={28} />
+          </div>
+          <h1 className="text-2xl font-bold tracking-tight text-white mb-2">DevAssist</h1>
+          <p className="text-sm text-slate-400">Multi-agent codebase auditing, testing & documentation</p>
         </div>
 
         {error && (
@@ -101,7 +101,7 @@ export default function Auth({ onAuthSuccess }: AuthProps) {
               placeholder="email"
               value={adminId}
               onChange={(e) => setAdminId(e.target.value)}
-              className="w-full border border-slate-700 rounded-xl px-4 py-3 text-slate-100 focus:outline-none focus:border-indigo-500 text-sm"
+              className="w-full bg-[#070b13] border border-slate-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-indigo-500 text-sm"
               required
             />
             <input
@@ -109,16 +109,16 @@ export default function Auth({ onAuthSuccess }: AuthProps) {
               placeholder="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="w-full border border-slate-700 rounded-xl px-4 py-3 text-slate-100 focus:outline-none focus:border-indigo-500 text-sm"
+              className="w-full bg-[#070b13] border border-slate-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-indigo-500 text-sm"
               required
             />
             <button
               type="submit"
               disabled={adminLoading}
-              className="w-full bg-indigo-600 hover:bg-indigo-500 text-slate-950 font-semibold rounded-xl py-3 px-4 transition-colors focus:outline-none text-sm flex items-center justify-center gap-2 disabled:opacity-60"
+              className="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-semibold rounded-xl py-3 px-4 transition-colors focus:outline-none text-sm flex items-center justify-center gap-2 disabled:opacity-60"
             >
               {adminLoading ? (
-                <span className="w-5 h-5 border-2 border-slate-950/30 border-t-slate-950 rounded-full animate-spin" />
+                <span className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
               ) : (
                 "Continue"
               )}
@@ -129,10 +129,10 @@ export default function Auth({ onAuthSuccess }: AuthProps) {
             type="button"
             onClick={handleGithubLogin}
             disabled={githubLoading}
-            className="w-full bg-indigo-600 hover:bg-indigo-500 border border-indigo-600 text-slate-950 font-semibold rounded-xl py-3 px-4 transition-colors focus:outline-none text-sm flex items-center justify-center gap-2 disabled:opacity-60"
+            className="w-full bg-white hover:bg-slate-100 border border-slate-200 text-slate-950 font-semibold rounded-xl py-3 px-4 transition-colors focus:outline-none text-sm flex items-center justify-center gap-2 disabled:opacity-60"
           >
             {githubLoading ? (
-              <span className="w-5 h-5 border-2 border-slate-950/30 border-t-slate-950 rounded-full animate-spin" />
+              <span className="w-5 h-5 border-2 border-slate-400/30 border-t-slate-900 rounded-full animate-spin" />
             ) : (
               <>
                 <Github size={16} />

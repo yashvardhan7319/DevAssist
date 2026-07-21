@@ -374,8 +374,28 @@ ${fileSummary}
 
   const responseText = await callGroq(prompt, systemPrompt);
   const parsed = JSON.parse(responseText.trim());
+  const safeStr = (val: any, fallback = "No details generated."): string => {
+    if (!val && val !== 0) return fallback;
+    if (typeof val === "string") return val;
+    if (typeof val === "object") return val.summary || val.description || val.overview || val.text || JSON.stringify(val);
+    return String(val);
+  };
   return {
     ...parsed,
+    projectSummary: safeStr(parsed.projectSummary, "Summary generated from project analysis."),
+    technologyStackSummary: safeStr(parsed.technologyStackSummary, "Technology stack detected from dependencies."),
+    architectureSummary: safeStr(parsed.architectureSummary, "System architecture overview."),
+    folderTree: typeof parsed.folderTree === "string" ? parsed.folderTree : typeof parsed.folderTree === "object" ? JSON.stringify(parsed.folderTree, null, 2) : String(parsed.folderTree || ""),
+    frameworkDetection: {
+      framework: parsed.frameworkDetection?.framework || (Array.isArray(parsed.frameworkDetection?.frameworks) ? parsed.frameworkDetection.frameworks.join(", ") : typeof parsed.frameworkDetection === "string" ? parsed.frameworkDetection : "Unknown Framework"),
+      confidence: typeof parsed.frameworkDetection?.confidence === "number" ? parsed.frameworkDetection.confidence : 0.85,
+      filesDetected: Array.isArray(parsed.frameworkDetection?.filesDetected) ? parsed.frameworkDetection.filesDetected : [],
+    },
+    databaseDetection: {
+      dbType: parsed.databaseDetection?.dbType || (Array.isArray(parsed.databaseDetection?.databases) ? parsed.databaseDetection.databases.join(", ") : typeof parsed.databaseDetection === "string" ? parsed.databaseDetection : "None detected"),
+      orm: parsed.databaseDetection?.orm || "None detected",
+      detectedFiles: Array.isArray(parsed.databaseDetection?.detectedFiles) ? parsed.databaseDetection.detectedFiles : [],
+    },
     architectureGraph: ensureDetailedArchitectureDiagram(parsed.architectureGraph, files),
   };
 }
